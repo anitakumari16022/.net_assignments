@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class Program4
+    {
+        static void Main(string[] args)
+        {
+            int[] prices = { 1500, 2300, 999, 3200, 1750 };
+            int largestNumber = prices[0];
+            for (int i = 0; i < prices.Length; i++)
+            {
+                if (largestNumber < prices[i])
+                {
+                    largestNumber = prices[i];
+                }
+            }
+            Console.WriteLine(largestNumber);
+        }
+    }
+}
