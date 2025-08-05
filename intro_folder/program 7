@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class program7
+    {
+        static void Main(string[] ars)
+        {
+            int[] bookCodes = { 101, 203, 304, 405, 506 };
+            int searchCode = 304;
+            int index = findBook(bookCodes, searchCode);
+            Console.WriteLine("the book is on " + index + " "+ "position in the array");
+        }
+
+        static int findBook(int[] Codes, int searchCode)
+        {
+           
+            for (int i = 0; i < Codes.Length; i++)
+            {
+                if (searchCode == Codes[i])
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+        
+    }
+
+}
