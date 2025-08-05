@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class Program5
+    {
+        static void Main(string[] args)
+        {
+            float[] scores = { 85.5f, 90.3f, 78.4f, 88.9f, 92.1f };
+            float count = 0;
+            float sum = 0;
+            for(int i = 0; i < scores.Length; i++)
+            {
+                sum += scores[i];
+                count += 1.0f;
+            }
+             float average = sum / count;
+            Console.WriteLine(average);
+        }
+    }
+}
