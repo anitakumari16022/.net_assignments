@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class program2
+    {
+        static void Main(string[] args)
+        {
+            int even = 0, odd = 0;
+            int[] participantCodes = { 102, 215, 324, 453, 536 };
+            for(int i = 0; i < participantCodes.Length; i++)
+            {
+                if (participantCodes[i] % 2 == 0)
+                {
+                    even += 1;
+                }
+                else
+                {
+                    odd += 1;
+                }
+            }
+            Console.WriteLine(even + " ");
+            Console.WriteLine(odd + "");
+
+        }
+    }
+}
