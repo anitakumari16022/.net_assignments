@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class program8_1
+    {
+        static void Main(string[] args)
+        {
+            int[] grades = { 56, 78, 89, 45, 67 };
+            int flargest = int.MinValue;
+            int slargest = int.MinValue;
+            for (int i = 0; i < grades.Length; i++)
+            {
+                if (flargest < grades[i])
+                {
+                    slargest = flargest;
+                    flargest = grades[i];
+
+                }
+               
+            }
+            Console.WriteLine(slargest);
+
+        }
+    }
+}
