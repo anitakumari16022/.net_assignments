@@ -1,0 +1,42 @@
+using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    internal class program9
+    {
+         static void  Main(string[] args)
+        {
+            int[] ids = { 102, 215, 102, 324, 215 };
+            int[] new_array = new int[ids.Length];
+            int count = 0;
+            for (int i = 0; i < ids.Length; i++)
+            {
+                bool isDuplicate = false;
+                for (int j = 0; j < count; j++)
+                {
+                    if (ids[i] == ids[j])
+                    {
+                        isDuplicate = true;
+                        break;
+                    }
+
+                }
+                if (!isDuplicate)
+                {
+                    new_array[count] = ids[i];
+                    count++;
+                }
+            }
+                for (int i = 0; i <count; i++)
+                {
+                    Console.WriteLine(new_array[i]);
+                }
+            
+        }
+    }
+}
